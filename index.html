@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projet | Home</title>
     <link rel="stylesheet" href="index.css">
+    <!--Flikarty CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
    
 </style>
@@ -14,22 +17,39 @@
     
    <header>
     <div class="gola">
-    <h1>Welcome to Sudipta's Page</h1>
+    <h1><span>Welcome to Sudipta's Page</span></h1>
 </div>
    </header>
 
    <nav>
+    <a href="#">Home</a>&nbsp;&nbsp;|&nbsp;
     <a href="#">College Reviews</a>&nbsp;&nbsp;|&nbsp;<!-- # meaning empty ,  &nbsp = small gap-->
     <a href="https://www.ticollege.ac.in/" target="_blank">Techno Main SaltLake</a>&nbsp;&nbsp;|&nbsp;
-    <a href="logIn/Signup.html" target="_blank">LogIn/SignUp</a>&nbsp;&nbsp;|&nbsp;
-    <a href="#">Home</a>&nbsp;&nbsp;|&nbsp;
-    <a href="https://wbjeeb.nic.in/WBJEEBBoardCMS/Page/Page?PageId=1&LangId=P" target="_blank">WBJEE</a>
+    
+    
+    <a href="https://wbjeeb.nic.in/WBJEEBBoardCMS/Page/Page?PageId=1&LangId=P" target="_blank">WBJEE</a>&nbsp;&nbsp;|&nbsp;
+    <a href="logIn/Signup.html" target="_blank" class="flex-align-right">LogIn/SignUp</a>
    </nav>
 
     <main>
         <section>
-            <h2>Courses</h2>
-            <video src="video/Balwant _ Raxstar _ Sunit Music _ Official Music Video _ Panasonic Mobile MTV Spoken Word 2.mp4" width="50%" poster="video/download.jpeg"  controls></video>
+            <button onclick="subscribe()">Click here</button>
+            <h2>Entertainment</h2>
+            <div class="carousel"
+  data-flickity='{ "wrapAround": true }'>
+  
+  <div class="carousel-cell iframe-container"> <iframe   src="https://www.youtube.com/embed/YA0fzrnKmCs?si=k_gyGWkfUCk9XVUm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe></div>
+  <div class="carousel-cell iframe-container"> <iframe   src="https://www.youtube.com/embed/K3B8-klo5xc?si=keIzWKnX8K7wvF82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe></div>
+  <div class="carousel-cell iframe-container"><iframe   src="https://www.youtube.com/embed/H1YR5rsScC8?si=1YMJf38Sl1AoS9PK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe></div>
+  <div class="carousel-cell iframe-container"><iframe   src="https://www.youtube.com/embed/aRzbHxJZSTo?si=C8fzoZO0ZQRwVedN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe></div>
+  <div class="carousel-cell iframe-container"><iframe  src="https://www.youtube.com/embed/RBPVaBAQE-w?si=0yarcASL-9H-GV3-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe></div>
+</div>
+           
+            
+           
+           
+           
+            
         </section>
         <section>
             <h2>College Reviews</h2>
@@ -42,18 +62,20 @@
         <section>
             <h2>Our Founder</h2>
             <img src="video/1671953901061.jpeg" width="200" height="159" alt="This is Sudipta" >
-            <h3>Sudipta Sardar</h3>
-    
-            <a id="pp" href="http://https://www.linkedin.com/in/sudipta-sardar-40956a228/" target="_blank" rel="noopener noreferrer">linkedin</a> &nbsp | &nbsp
-            <a  href="https://www.facebook.com/sayan.diproy.752/" target="_blank" rel="noopener noreferrer">facebook</a>
-        
-<h5>#4th Year B.tech Electrical Enginering Student from Techno Main SaltLake || Eager to Learn New Things || Solve a problem in creative way</h5>
+            <h3 class="profile_name">Sudipta Sardar</h3>
+    <div class="sm-handle" >
+            <a id="pp" class="ld-handle" href="http://https://www.linkedin.com/in/sudipta-sardar-40956a228/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin fa-lg ld-handle"></i>linkedin</a> &nbsp | &nbsp
+            <a class="fb-handle" href="https://www.facebook.com/sayan.diproy.752/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook fa-lg fb-handle"></i>facebook</a>
+        </div>
+<div class="about_us">
+      <h5 class="about_content">#4th Year B.tech Electrical Enginering Student from Techno Main SaltLake || Eager to Learn New Things || Solve a problem in creative way</h5>
         </section>
-
         <aside>
             <h4>My Blog</h4>
             <p>Sir, I believe determination, dedication, discipline along with a zeal to complete his assigned work on time makes him an asset to the hub. Though, I am a fresher and don’t have much experience I have a positive attitude and will devote my 100 per cent to roles which I am offered.</p>
             </aside>
+    </div>
+       
 <footer>
     <a href="#">FAQ</a>&nbsp;&nbsp;
     <a href="#">Contact Us</a>&nbsp;&nbsp;
@@ -62,7 +84,8 @@
     <a href="#">Refund Policy</a>&nbsp;&nbsp;
     <a class="copyright" href="#">&copy; 2023 | Richie</a>
 </footer>
-
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
