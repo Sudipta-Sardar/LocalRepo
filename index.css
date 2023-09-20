@@ -14,7 +14,7 @@ header{
 }
 header h1{
     font-size: 40px;
-    background-image: url(video/img.png);
+   /*  background-image: url(video/img.png); */
     background-size: cover;
     background-position:bottom;
     position: relative;
@@ -26,14 +26,17 @@ header h1{
 
 }
 
-nav{
+footer,nav{
     background-color: #333;
     text-decoration: dashed;
     text-decoration: #ecf1f2;
     overflow: hidden;
+    display: flex;
+    padding: 10px 0px;
+    background-attachment: fixed;
 }
  
-nav a{
+footer a,nav a{
     display: block;
     color: white;
     text-decoration: none; /*  remove underline */
@@ -48,17 +51,16 @@ nav a:hover{
 
 section{
     text-align: center;
-    padding-top:40px ;
-    height: 100vh;
+    padding:75px 0px ;
+    height: 100%;
+    min-height: 40vh;
 }
 
 section:nth-child(even){
     background-color: #ececec;
 }
 
-iframe{
-    padding: 0px 5px;
-}
+
 
 img{
     padding: 0px 20px ;
@@ -87,4 +89,89 @@ img{
  section h5{
     margin: 0px 130px;
  }
+ .flex-align-right{
+    margin-left: auto;
+ }
+ section h2{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,161,70,1) 35%, rgba(0,212,255,1) 100%);
+ }
+ 
+  
+  .carousel-cell {
+    width: 66%;
+   
+    margin-right: 10px;
+   
+    border-radius: 5px;
+   
+  }
+ 
+  .carousel-cell iframe-container video {
+    max-width: 100%;
+  }
+  .iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+    position: relative;
+    width: 90%;
+    height: 90%;
+  } 
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+  }
+.profile_name{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+}
+.sm-handle a{
+    background-color: rgb(125 125 125 / 25%);
+    padding: 3px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none; /*remove underline */
+    font-size: 1.1em;
+}
+.sm-handle a:hover{
+    background-color: rgb(30 30 30/ 25%);
+}
+.sm-handle a i{
+    margin: 5px;
+}
 
+.ld-handle{
+   color: #0A66C2; 
+}
+
+.fb-handle{
+    color: #4267B2;
+}
+.about_us{
+    margin: 50px;
+
+}
+.about_content{
+    font-size: 1.45em;
+    padding: 0px 10px;
+    color: #120f5e;
+}
+
+@media screen and (max-width:600px) {
+   footer, nav{
+        flex-direction: column;
+    }
+
+    .flex-align-right{
+        margin-left: 0;
+     }
+}
